@@ -2,7 +2,12 @@ module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'monument': ['Monument', 'sans-serif'],
+        'general': ['General', 'sans-serif']
+      }
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
@@ -29,10 +34,10 @@ module.exports = {
       yellow: '#fcc419',
       orange: '#ff922b',
       pink: '#f06595',
-      medical: '#f06595',
-      retirement: '#f06595',
+      medical: '#FCC419',
+      retirement: '#ff922b',
       savings: '#f06595',
-      estate: '#f06595',
+      estate: '#52EDFF',
     },
   },
   variants: {

@@ -20,16 +20,16 @@ const Card = ({ leftIcon, header, content, iconBgColor, hidden, onClick }) => {
           </div>
         </div>
         <div className="col-span-4 md:col-span-8 lg:col-span-10 content-center flex items-center ">
-          <p className="text-base text-left">{header}</p>
+          <p className="text-base text-left font-general">{header}</p>
         </div>
         <div className="flex item-center justify-center">
-          <Image src="/icons/chevron-down.svg" width={20} height={20} />
+          <Image className={hidden ? "transition duration-700 ease-in-out" : "transform rotate-180 transition duration-700 ease-in-out"} src="/icons/chevron-down.svg" width={20} height={20} />
         </div>
       </div>
       {!hidden && (
         <div className="grid grid-cols-6 md:grid-cols-10 lg:grid-cols-12 gap-4 content-center">
           <div className="col-start-2 col-span-4 md:col-start-2 md:col-span-8 lg:col-start-2 lg:col-span-10">
-            <p className="text-left text-sm">{content}</p>
+            <p className="text-left text-sm form-general opacity-80">{content}</p>
           </div>
         </div>
       )}

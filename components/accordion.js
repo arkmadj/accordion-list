@@ -4,7 +4,7 @@ import Card from "./card";
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
-const Accordion = ({focused}) => {
+const Accordion = () => {
   const [active, setActive] = useState(null);
 
   const handleClick = (index) => {
